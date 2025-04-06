@@ -237,16 +237,37 @@
                 '#455A64', // 蓝灰色
                 '#F57C00', // 深橙色
                 '#039BE5', // 浅蓝色
-                '#8D6E63'  // 浅棕色
+                '#8D6E63',  // 浅棕色
+				// 新增扩展色系（保持相同饱和度/明度）
+			'#AB47BC', // 紫罗兰
+			'#EC407A', // 玫红色
+			'#26C6DA', // 亮青色
+			'#66BB6A', // 薄荷绿
+			'#FFA726', // 琥珀色
+			'#EF5350', // 珊瑚红
+			'#5C6BC0', // 矢车菊蓝
+			'#FF7043', // 深珊瑚色
+			'#9CCC65', // 酸橙绿
+			'#8E24AA', // 深紫色
+			'#42A5F5', // 天蓝色
+			'#7E57C2', // 中紫色
+			'#D4E157', // 柠檬黄
+			'#26A69A', // 绿松石色
+			'#FFCA28', // 金丝雀黄
+			'#78909C', // 石板灰
+			'#C0CA33', // 黄绿色
+			'#F06292', // 浅玫红
+			'#4DB6AC', // 碧绿色
+			'#BA68C8'  // 兰花紫
             ];
             
             // 如果索引超出预定义颜色范围，则生成随机颜色
             if (index < colors.length) {
                 return colors[index];
             } else {
-                const r = Math.floor(Math.random() * 200);
-                const g = Math.floor(Math.random() * 200);
-                const b = Math.floor(Math.random() * 200);
+                const r = Math.floor(Math.random() * 256);
+                const g = Math.floor(Math.random() * 256);
+                const b = Math.floor(Math.random() * 256);
                 return `rgb(${r}, ${g}, ${b})`;
             }
         }
